@@ -1,0 +1,35 @@
+{
+"formTestData":
+[
+  {
+    "TestCase": "TestCase1",
+    "Name": "Peter",
+    "email": "peter@mail.com",
+    "ExpectedUrl": "rabobank.nl"
+  },
+  {
+    "TestCase": "TestCase2",
+    "Name": "John",
+    "email": "thing@mail.com",
+    "ExpectedUrl": "rabobank.nl"
+  },
+  {
+    "TestCase": "TestCase3",
+    "Name": "Smith",
+    "email": "smile@mail.com",
+    "ExpectedUrl": "rabobank.nl"
+  },
+  {
+    "TestCase": "TestCase4",
+    "Name": "Amina",
+    "email": "game@mail.com",
+    "ExpectedUrl": "rabobank.nl"
+  },
+  {
+    "TestCase": "TestCase5",
+    "Name": "Frans",
+    "email": "frans@game.com",
+    "ExpectedUrl": "rabobank.nl"
+  }
+]
+}

@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  position:relative;
+  top:14px;
+  
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  color: #ff0000;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+
+.top2000 {
+  padding-top:50px;
+  padding-bottom:40px;
+}
+
+.top2000 h2{
+font-family: 'Shift', sans-serif;
+font-weight: bold;
+text-shadow: 1px 1px #222;
+}
+
+.cds h2{
+font-family: 'Shift', sans-serif;
+font-weight: bold;
+text-shadow: 1px 1px #222;
+}
+
+.family h2{
+font-family: 'Shift', sans-serif;
+font-weight: bold;
+text-shadow: 1px 1px #222;
+}
+
+.Martijn h2{
+font-family: 'Shift', sans-serif;
+font-weight: bold;
+text-shadow: 1px 1px #222;
+}
+
+.Tobias h2{
+font-family: 'Shift', sans-serif;
+font-weight: bold;
+text-shadow: 1px 1px #222;
+}
+
+.cds {
+	background-color: #f0f0f0;	
+	padding-top:50px;
+	padding-bottom:40px;
+}
+
+
+.family {
+	background-color: #fbfbfb;	
+	padding-bottom:40px;
+	padding-top:50px;
+	}
+	
+.boekbutton {
+	background-color: #fbfbfb;	
+	padding-bottom:40px;
+	padding-top:30px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #333;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+* {box-sizing: border-box;}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  margin-left: 44%;
+  margin-right: auto;
+  width: 15%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

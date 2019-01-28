@@ -1,0 +1,117 @@
+<div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+           <li><a href="/home" data-testid="lnkHome">Home</a></li>
+          <li><a href="/bands" data-testid="lnkBands">Bands</a></li>
+		</ul>
+		<ul class="pull-right">
+          <li><img src="./assets/Logo.png" style="width:40px;height:40px"></li>
+        </ul>
+      </div>
+	  </div>
+
+	  <div class="jumbotron">
+      <div class="container">
+	  <div class="row">
+		<div class="col-md-6">
+			<img src="./assets/bandfoto.png" height="300" width="500">
+		</div>
+		<div class="col-md-6">
+			<h1>Roses 'n Guns</h1>
+			<p>Dé rockband van Nederland. Roses 'n Guns zijn al sinds de jaren 90 een naam in de Rock wereld. Van de Superbowl tot aan Lowlands en Pinkpop, ze hebben overal al een keer opgetreden! Vanaf nu kan je deze helden boeken via onze website, boek ze snel want ze zijn razendsnel uitverkocht en zeer exclusief.</p>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bekijk hier hun laatste concert op Lowlands.</a>
+		</div>	
+	  </div>
+    </div> 
+	</div>
+    
+<div class="top2000">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<img src="./assets/4.png" height="100px" width="100px">
+		</div>
+		<div class="col-md-9">
+		    <h2>Top 2000</h2>
+			<p>Met hun nummer 'Rocking and Rolling' staan ze jaarlijks in de Top 2000. Dit jaar staan ze zelfs voor het eerst op plek 4!</p>
+		</div>
+    </div>
+    </div>
+    </div>
+
+<div class="cds">
+	<div class="container">
+    <div class="row">
+    	<div class="col-md-3">
+        	<img src="./assets/cds.png" height="100px" width="100px">
+            </div>
+            <div class="col-md-9">
+            <h2>Nieuwe album</h2>
+            <p>In 2018 hebben ze hun laatste album ooit uitgebracht: "Stairway to heaven". Hiermee komt de teller op 23 succesvolle albums die allemaal kick ass rock bevatten!</p>
+            </div>
+     </div>
+     </div>
+     </div>
+     
+<div class="family">
+	<div class="container">
+    <div class="row">
+    	<div class="col-md-3">
+        	<img src="./assets/family.png" height="100px" width="100px">
+            </div>
+            <div class="col-md-9">
+            <h2>Word lid van de Roses 'n Guns Family!</h2>
+            <p>Door deze geweldige band te boeken krijg je ook de kans om lid te worden van de Roses 'n Guns Family. Deze zeer exclusieve club geeft regelmatig feestjes voor hun meest trouwe fans!</p>
+            </div>
+     </div>
+     </div>
+     </div>
+     
+<div class="boekbutton">
+	<div class="container">
+    <div class="row">
+		<div class="col-md-5">
+       
+		</div>
+		<div class="col-md-2">
+			<button class="button" style="vertical-align:middle" onclick="openForm()" data-testid="btnBoek"><span>Boek hier! </span></button>
+		</div>
+		<div class="col-md-5">
+       
+		</div>
+     </div>
+     </div>
+     </div>
+	 
+<div class="form-popup" id="myForm">
+  <form action="http://rabobank.nl" class="form-container">
+    <h1>Roses 'n Guns</h1>
+	<label for="naam"><b>Naam</b></label>
+    <input id="inputName" data-testid="inpName" type="text" placeholder="Naam:" name="naam" required>
+	
+    <label for="email"><b>Email</b></label>
+    <input id="inputMail" data-testid="inpMail" type="text" placeholder="Email:" name="email" required>
+	
+	<label for="datum"><b>Datum</b></label>
+    <input type="text" placeholder="15-06-2019" name="datum" disabled>
+		
+    <button type="submit" data-testid="btnBetalen" class="btn">Naar betalen</button>
+    <button type="submit" data-testid="btnCancel" class="btn cancel" onclick="closeForm()">Annuleer</button>
+  </form>
+</div> 
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById("myForm").scrollIntoView();
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+} 
+
+function boekForm(){
+	window.location.href = "http://rabobank.nl";
+}
+</script>
+<router-outlet></router-outlet>
